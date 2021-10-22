@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <p style="display: flex;justify-content: center;font-size: larger; font-family: Roboto, sans-serif;color:#f95738;">The Basic Calculator</p>
+    <table>
+        <caption style="padding: 10px;">Calculator</caption>
+        <tr>
+            <td colspan="4">
+                <input type="text" disabled id="display">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="CE" class="button util" id="CE" onclick="inpt('C')"></td>
+            <td><input type="button" value="DEL" class="button util" onclick="inpt('CE')"></td>
+            <td><input type="button" value="%" class="button oper" style="font-size: larger;" onclick="inpt('%')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" class="button num" onclick="inpt('7')"></td>
+            <td><input type="button" value="8" class="button num" onclick="inpt('8')"></td>
+            <td><input type="button" value="9" class="button num" onclick="inpt('9')"></td>
+            <td><input type="button" value="/" class="button oper" onclick="inpt('/')"></td>
+            
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="button num" onclick="inpt('4')"></td>
+            <td><input type="button" value="5" class="button num" onclick="inpt('5')"></td>
+            <td><input type="button" value="6" class="button num" onclick="inpt('6')"></td>
+            <td><input type="button" value="*" class="button oper" onclick="inpt('*')"></td>
+            
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="button num" onclick="inpt('1')"></td>
+            <td><input type="button" value="2" class="button num" onclick="inpt('2')"></td>
+            <td><input type="button" value="3" class="button num" onclick="inpt('3')"></td>
+            <td><input type="button" value="-" class="button oper" onclick="inpt('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" class="button num" onclick="inpt('0')"></td>
+            <td><input type="button" value="." class="button num" style="font-size: larger;" onclick="inpt('.')"></td>
+            <td><input type="button" value="=" class="button util" onclick="inpt('=')"></td>
+            <td><input type="button" value="+" class="button oper" onclick="inpt('+')"></td>
+        </tr>
+    </table>
+</body>
+</html>
